@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: 'main-service'
+  datasource:
+    url: jdbc:postgresql://localhost:5432/academy
+    username: manager
+    password: manager
+  jpa:
+    show-sql: true
+student:
+  backendServiceHost: localhost
+  backendServicePort: 8080
+
