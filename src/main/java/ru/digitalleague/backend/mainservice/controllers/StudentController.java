@@ -42,11 +42,6 @@ public class StudentController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-
-    public ResponseEntity<Student> extractStudentAndSave_fallback(String className) {
-        throw new BackendServerOffline(backendServiceHost, backendServicePort);
-    }
-
     @GetMapping("/add/{className}")
     public ResponseEntity<Student> extractStudentAndSave(@PathVariable String className) {
 
