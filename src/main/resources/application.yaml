@@ -12,4 +12,10 @@ spring:
 student:
   backendServiceHost: localhost
   backendServicePort: 8080
+info:
+  application-name: ${spring.application.name}
+  developer:
+    name: Homer Simpson
+    email: homer@simpson.com
+management.endpoints.web.exposure.include: '*'
 

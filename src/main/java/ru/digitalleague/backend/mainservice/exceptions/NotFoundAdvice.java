@@ -23,4 +23,10 @@ public class NotFoundAdvice {
         return backendServerOffline.getMessage();
     }
 
+    @ResponseBody
+    @ExceptionHandler(StudentNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    String studentNotFoundException(StudentNotFoundException snfe){
+        return snfe.getMessage();
+    }
 }
